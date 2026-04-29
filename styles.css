@@ -1,0 +1,579 @@
+/* 
+  Draw Drop Daily styles
+  This file controls the colors, spacing, layout, and responsive behavior.
+*/
+
+:root {
+  --ink: #18131f;
+  --paper: #fffdf8;
+  --cream: #fff4dc;
+  --mint: #baf4dd;
+  --sky: #9ed9ff;
+  --coral: #ff765f;
+  --yellow: #ffd166;
+  --violet: #6b4cff;
+  --line: #2c2635;
+  --muted: #665f72;
+  --shadow: 0 18px 45px rgba(24, 19, 31, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent sticky navigation from covering a section after someone clicks an anchor link. */
+#top,
+#how-it-works,
+#gallery,
+#about {
+  scroll-margin-top: 7rem;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 8% 8%, rgba(255, 209, 102, 0.34), transparent 24rem),
+    linear-gradient(135deg, #fffdf8 0%, #f8fbff 46%, #fff4dc 100%);
+  font-family: "Inter", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+/* Shared section spacing keeps the page consistent. */
+.section-pad {
+  padding: 5.5rem max(1.25rem, calc((100vw - 1120px) / 2));
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem max(1.25rem, calc((100vw - 1120px) / 2));
+  background: rgba(255, 253, 248, 0.88);
+  border-bottom: 2px solid rgba(24, 19, 31, 0.08);
+  backdrop-filter: blur(16px);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  color: var(--paper);
+  background: var(--ink);
+  border: 3px solid var(--ink);
+  border-radius: 8px;
+  box-shadow: 6px 6px 0 var(--yellow);
+  font-family: "Baloo 2", cursive;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.brand strong {
+  display: block;
+  font-family: "Baloo 2", cursive;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.brand small {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.2;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 800;
+  font-size: 0.93rem;
+}
+
+.site-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  text-decoration: none;
+}
+
+.site-nav a:not(.nav-button) {
+  padding: 0.2rem 0;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--coral);
+  outline-offset: 4px;
+}
+
+.nav-button {
+  padding: 0.62rem 0.95rem;
+  color: var(--paper);
+  background: var(--violet);
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.82fr);
+  align-items: center;
+  gap: 3rem;
+  min-height: calc(100vh - 76px);
+  padding-top: 4rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.8rem;
+  color: var(--violet);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  overflow-wrap: anywhere;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  font-family: "Baloo 2", cursive;
+  line-height: 0.98;
+}
+
+h1 {
+  max-width: 11ch;
+  margin-bottom: 1.25rem;
+  font-size: clamp(3.1rem, 8vw, 6.8rem);
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+h3 {
+  margin-bottom: 0.45rem;
+  font-size: 1.45rem;
+}
+
+.hero-text {
+  max-width: 42rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.25rem;
+  padding: 0.85rem 1.2rem;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  box-shadow: 5px 5px 0 var(--ink);
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.button:hover,
+.button:focus-visible,
+.nav-button:hover,
+.nav-button:focus-visible {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--ink);
+}
+
+.primary-button {
+  color: var(--ink);
+  background: var(--yellow);
+}
+
+.secondary-button {
+  background: var(--paper);
+}
+
+.hero-art {
+  display: flex;
+  justify-content: center;
+}
+
+.paper {
+  position: relative;
+  width: min(100%, 26rem);
+  padding: 1.4rem;
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  border-radius: 8px;
+  box-shadow: 18px 18px 0 var(--coral), var(--shadow);
+  transform: rotate(2deg);
+}
+
+.paper-label {
+  position: absolute;
+  top: -1.15rem;
+  left: 1.3rem;
+  padding: 0.3rem 0.8rem;
+  color: var(--ink);
+  background: var(--mint);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  font-weight: 900;
+}
+
+.paper svg {
+  width: 100%;
+  aspect-ratio: 420 / 520;
+  fill: none;
+  stroke: var(--line);
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  background:
+    linear-gradient(rgba(24, 19, 31, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(24, 19, 31, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 2.2rem;
+}
+
+.section-heading p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.how-it-works {
+  background: rgba(255, 255, 255, 0.64);
+}
+
+.steps-grid,
+.gallery-grid {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.steps-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.step-card,
+.gallery-card,
+.signup-card,
+.about-panel {
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  box-shadow: 7px 7px 0 rgba(24, 19, 31, 0.95);
+}
+
+.step-card {
+  padding: 1.4rem;
+  background: var(--paper);
+}
+
+.step-number {
+  display: grid;
+  place-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  margin-bottom: 1.2rem;
+  background: var(--sky);
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  font-family: "Baloo 2", cursive;
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.step-card p,
+.gallery-card p,
+.about-panel p,
+.signup-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.gallery-section {
+  background:
+    linear-gradient(90deg, rgba(186, 244, 221, 0.55), rgba(158, 217, 255, 0.35)),
+    var(--paper);
+}
+
+.gallery-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gallery-card {
+  padding: 0.9rem;
+  background: var(--paper);
+}
+
+.mini-print {
+  min-height: 13rem;
+  margin-bottom: 1rem;
+  border: 2px solid var(--ink);
+  border-radius: 6px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 78%;
+}
+
+/* These background images are simple placeholder art previews made with CSS gradients. */
+.flower-print {
+  background-image:
+    radial-gradient(circle at 50% 28%, transparent 0 12px, var(--ink) 13px 15px, transparent 16px),
+    radial-gradient(circle at 42% 20%, transparent 0 18px, var(--ink) 19px 21px, transparent 22px),
+    radial-gradient(circle at 58% 20%, transparent 0 18px, var(--ink) 19px 21px, transparent 22px),
+    radial-gradient(circle at 38% 35%, transparent 0 18px, var(--ink) 19px 21px, transparent 22px),
+    radial-gradient(circle at 62% 35%, transparent 0 18px, var(--ink) 19px 21px, transparent 22px),
+    linear-gradient(82deg, transparent 50%, var(--ink) 50% 52%, transparent 53%);
+}
+
+.moon-print {
+  background-image:
+    radial-gradient(circle at 48% 35%, transparent 0 48px, var(--ink) 49px 52px, transparent 53px),
+    radial-gradient(circle at 62% 27%, #fff 0 47px, transparent 48px),
+    radial-gradient(circle at 32% 70%, transparent 0 8px, var(--ink) 9px 11px, transparent 12px),
+    radial-gradient(circle at 70% 72%, transparent 0 7px, var(--ink) 8px 10px, transparent 11px);
+}
+
+.mug-print {
+  background-image:
+    radial-gradient(ellipse at 69% 48%, transparent 0 24px, var(--ink) 25px 29px, transparent 30px),
+    linear-gradient(var(--ink), var(--ink)),
+    radial-gradient(ellipse at 50% 44%, transparent 0 68px, var(--ink) 69px 73px, transparent 74px),
+    linear-gradient(90deg, transparent 47%, var(--ink) 48% 51%, transparent 52%);
+  background-size: 84px 80px, 122px 4px, 170px 130px, 200px 64px;
+  background-position: 70% 51%, 50% 68%, 50% 55%, 50% 24%;
+}
+
+.house-print {
+  background-image:
+    linear-gradient(135deg, transparent 45%, var(--ink) 46% 49%, transparent 50%),
+    linear-gradient(45deg, transparent 45%, var(--ink) 46% 49%, transparent 50%),
+    linear-gradient(var(--ink), var(--ink)),
+    linear-gradient(90deg, var(--ink) 0 4px, transparent 4px 74px, var(--ink) 74px 78px),
+    linear-gradient(var(--ink), var(--ink));
+  background-size: 100px 100px, 100px 100px, 92px 4px, 78px 72px, 52px 4px;
+  background-position: 43% 33%, 57% 33%, 50% 54%, 50% 66%, 50% 78%;
+}
+
+.star-print {
+  background-image:
+    radial-gradient(circle at 50% 50%, transparent 0 18px, var(--ink) 19px 22px, transparent 23px),
+    linear-gradient(36deg, transparent 45%, var(--ink) 46% 48%, transparent 49%),
+    linear-gradient(-36deg, transparent 45%, var(--ink) 46% 48%, transparent 49%),
+    radial-gradient(circle at 24% 25%, transparent 0 8px, var(--ink) 9px 11px, transparent 12px),
+    radial-gradient(circle at 76% 30%, transparent 0 7px, var(--ink) 8px 10px, transparent 11px);
+}
+
+.wreath-print {
+  background-image:
+    radial-gradient(circle at 50% 50%, transparent 0 60px, var(--ink) 61px 65px, transparent 66px),
+    radial-gradient(circle at 36% 33%, transparent 0 13px, var(--ink) 14px 16px, transparent 17px),
+    radial-gradient(circle at 64% 33%, transparent 0 13px, var(--ink) 14px 16px, transparent 17px),
+    radial-gradient(circle at 33% 62%, transparent 0 13px, var(--ink) 14px 16px, transparent 17px),
+    radial-gradient(circle at 67% 62%, transparent 0 13px, var(--ink) 14px 16px, transparent 17px);
+}
+
+.about-section {
+  background: var(--ink);
+}
+
+.about-panel {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 2rem;
+  padding: clamp(1.4rem, 4vw, 2.8rem);
+  color: var(--paper);
+  background: #2b2440;
+  box-shadow: 8px 8px 0 var(--yellow);
+}
+
+.about-panel .eyebrow,
+.about-panel p {
+  color: #f1eafd;
+}
+
+.signup-section {
+  background: #fff8e9;
+}
+
+.signup-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.85fr);
+  gap: 2rem;
+  align-items: center;
+  padding: clamp(1.4rem, 4vw, 2.5rem);
+  background: var(--paper);
+}
+
+.signup-form label {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-weight: 900;
+}
+
+.signup-form[aria-disabled="true"] {
+  opacity: 0.82;
+}
+
+.form-row {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.form-row input,
+.form-row button {
+  min-height: 3.2rem;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  font: inherit;
+}
+
+.form-row input {
+  width: 100%;
+  padding: 0 0.95rem;
+  background: #f7f3ea;
+}
+
+.form-row button {
+  flex: 0 0 auto;
+  padding: 0 1rem;
+  color: var(--paper);
+  background: var(--ink);
+  font-weight: 900;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem max(1.25rem, calc((100vw - 1120px) / 2));
+  color: var(--paper);
+  background: var(--ink);
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer a {
+  font-weight: 900;
+}
+
+@media (max-width: 850px) {
+  .site-header,
+  .site-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .site-nav {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .hero,
+  .about-panel,
+  .signup-card {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 3rem;
+  }
+
+  .steps-grid,
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .section-pad {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .brand strong {
+    font-size: 1.12rem;
+  }
+
+  h1 {
+    font-size: clamp(2.75rem, 16vw, 4.2rem);
+  }
+
+  .site-nav {
+    gap: 0.7rem;
+    font-size: 0.86rem;
+  }
+
+  .steps-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .paper {
+    box-shadow: 10px 10px 0 var(--coral), var(--shadow);
+  }
+
+  .hero-actions,
+  .form-row {
+    flex-direction: column;
+  }
+
+  .button,
+  .form-row button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 460" role="img" aria-labelledby="title desc">
+  <title id="title">Moon Garden coloring page preview</title>
+  <desc id="desc">A simple line drawing preview of a moon, stars, and leaves.</desc>
+  <rect width="360" height="460" fill="#fff"/>
+  <g fill="none" stroke="#18131f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="44" y="36" width="272" height="388" rx="16"/>
+    <path d="M207 95c-48 21-69 77-48 124 22 48 77 69 125 48-19 43-70 63-115 43-54-24-79-87-55-141 18-40 55-65 93-74Z"/>
+    <path d="M92 337c53-72 110-87 174-45M113 358c36-30 75-36 118-18"/>
+    <path d="M263 113l8 18 18 8-18 8-8 18-8-18-18-8 18-8zM118 119l6 13 13 6-13 6-6 13-6-13-13-6 13-6z"/>
+  </g>
+</svg>

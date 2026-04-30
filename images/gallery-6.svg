@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 460" role="img" aria-labelledby="title desc">
+  <title id="title">Happy Wreath coloring page preview</title>
+  <desc id="desc">A simple line drawing preview of a decorative wreath.</desc>
+  <rect width="360" height="460" fill="#fff"/>
+  <g fill="none" stroke="#18131f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="44" y="36" width="272" height="388" rx="16"/>
+    <circle cx="180" cy="220" r="82"/>
+    <circle cx="180" cy="220" r="45"/>
+    <path d="M126 158c-25-5-42-20-50-46 30-2 50 12 60 41M236 158c10-29 31-43 62-41-9 27-27 42-53 46"/>
+    <path d="M117 280c-28 4-49 20-62 48 33 5 57-8 71-36M244 279c28 4 49 20 62 48-33 5-57-8-71-36"/>
+    <path d="M153 131c5-21 15-37 31-47 15 11 23 27 25 48M151 309c10 23 24 38 42 45 14-14 20-31 18-51"/>
+  </g>
+</svg>

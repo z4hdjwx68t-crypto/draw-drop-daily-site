@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 460" role="img" aria-labelledby="title desc">
+  <title id="title">Star Notes coloring page preview</title>
+  <desc id="desc">A simple line drawing preview of stars, notes, and doodles.</desc>
+  <rect width="360" height="460" fill="#fff"/>
+  <g fill="none" stroke="#18131f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="44" y="36" width="272" height="388" rx="16"/>
+    <path d="M180 96l24 62 66 4-51 42 16 64-55-35-55 35 16-64-51-42 66-4z"/>
+    <path d="M99 322h162M113 348h134"/>
+    <path d="M87 111l8 18 18 8-18 8-8 18-8-18-18-8 18-8zM274 304l7 15 15 7-15 7-7 15-7-15-15-7 15-7z"/>
+  </g>
+</svg>

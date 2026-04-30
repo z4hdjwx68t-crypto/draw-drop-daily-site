@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 460" role="img" aria-labelledby="title desc">
+  <title id="title">Tiny Cottage coloring page preview</title>
+  <desc id="desc">A simple line drawing preview of a small cottage and garden path.</desc>
+  <rect width="360" height="460" fill="#fff"/>
+  <g fill="none" stroke="#18131f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="44" y="36" width="272" height="388" rx="16"/>
+    <path d="M99 220l82-78 82 78"/>
+    <path d="M123 217v106h116V217"/>
+    <path d="M164 323v-62h35v62M137 246h31M199 246h31"/>
+    <path d="M130 355c34-28 68-28 102 0M105 378c53-32 103-32 153 0"/>
+    <path d="M90 291c-20-9-27-25-21-49 26 9 35 24 27 47M271 290c21-8 29-24 24-48-27 8-37 23-30 46"/>
+  </g>
+</svg>

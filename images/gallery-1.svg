@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 460" role="img" aria-labelledby="title desc">
+  <title id="title">Flower Market coloring page preview</title>
+  <desc id="desc">A simple line drawing preview of flowers in a jar.</desc>
+  <rect width="360" height="460" fill="#fff"/>
+  <g fill="none" stroke="#18131f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="44" y="36" width="272" height="388" rx="16"/>
+    <path d="M142 250h76l-12 122h-52z"/>
+    <path d="M136 250c10 13 79 13 90 0"/>
+    <circle cx="120" cy="148" r="22"/><circle cx="98" cy="126" r="22"/><circle cx="142" cy="126" r="22"/><circle cx="98" cy="170" r="22"/><circle cx="142" cy="170" r="22"/>
+    <circle cx="230" cy="160" r="22"/><circle cx="208" cy="138" r="22"/><circle cx="252" cy="138" r="22"/><circle cx="208" cy="182" r="22"/><circle cx="252" cy="182" r="22"/>
+    <path d="M120 192c15 27 24 48 27 64M229 204c-11 26-18 44-21 55"/>
+  </g>
+</svg>

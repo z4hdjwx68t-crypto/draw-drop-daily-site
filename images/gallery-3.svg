@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 460" role="img" aria-labelledby="title desc">
+  <title id="title">Cozy Mug coloring page preview</title>
+  <desc id="desc">A simple line drawing preview of a warm drink mug with steam.</desc>
+  <rect width="360" height="460" fill="#fff"/>
+  <g fill="none" stroke="#18131f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="44" y="36" width="272" height="388" rx="16"/>
+    <path d="M118 221h123l-15 113H133z"/>
+    <path d="M241 240c44-7 55 64 4 65"/>
+    <path d="M125 221c12 17 100 17 115 0"/>
+    <path d="M140 174c-14-24 18-34 0-59M183 174c-14-24 18-34 0-59M226 174c-14-24 18-34 0-59"/>
+    <path d="M112 355h141"/>
+  </g>
+</svg>
